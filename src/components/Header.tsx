@@ -1,5 +1,6 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text } from "react-native";
 import { Consulta } from "../interfaces/consulta";
+import { styles } from "../styles/header.styles";
 
 type ConsultaCardProps = {
   consulta: Consulta;
@@ -15,21 +16,3 @@ export default function Header({ consulta }: ConsultaCardProps) {
         </View>
     )
 }
-
-const styles = StyleSheet.create({
-    header: {
-        alignItems: "center",
-        marginBottom: 24,
-    },
-    titulo: {
-        fontSize: 28,
-        fontWeight: "bold",
-        color: "#fff",
-        marginBottom: 8,
-    },
-    subtitulo: {
-        fontSize: 18,
-        color: "#fff",
-        opacity: 0.9,
-    }
-})
